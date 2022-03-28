@@ -33,7 +33,7 @@ namespace AMHP.Avaliacao.Data.Tests
                             .Generate();
 
             //act
-            var usuario = _repository.Adicionar(domain);
+            var usuario = _repository.AdicionarUsuario(domain);
 
             //assert
             Assert.NotNull(usuario);
@@ -61,7 +61,7 @@ namespace AMHP.Avaliacao.Data.Tests
                             .CustomInstantiator(f => new Usuario(f.Person.FullName))
                             .Generate();
 
-            _repository.Adicionar(domain);
+            _repository.AdicionarUsuario(domain);
 
             //act
             var usuario = _repository.ObterPorId(domain.Id);

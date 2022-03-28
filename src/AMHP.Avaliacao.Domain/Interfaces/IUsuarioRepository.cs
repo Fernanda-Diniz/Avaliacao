@@ -3,6 +3,6 @@
     public interface IUsuarioRepository : IDisposable
     {
         Usuario ObterPorId(Guid id);
-        Usuario Adicionar(Usuario usuario);
+        Usuario AdicionarUsuario(Usuario usuario);
     }
 }
