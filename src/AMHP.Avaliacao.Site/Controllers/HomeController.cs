@@ -57,7 +57,7 @@ namespace AMHP.Avaliacao.Site.Controllers
 
             usr.DefirnirResposta(new UsuarioPerguntaResposta(10, usuario.Pergunta_10.Value, usr.Id));
 
-            _usuarioRepository.Adicionar(usr);
+            _usuarioRepository.AdicionarUsuario(usr);
 
             return usr.Id;
         }
